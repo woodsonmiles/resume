@@ -136,11 +136,11 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[4]{ % 4 parameters: company name, year(s) employed, job title and location
+\newenvironment{rSubsection}[3]{ % 4 parameters: company name, year(s) employed, job title and location
 	\textbf{#1} \hfill {#2} % Bold company name and date to the right
 	\ifthenelse{\equal{#3}{}}{}{ % If the third parameter is empty, don't output the job title and location line
 		\\ % Job title and location on a new line
-		\textit{#3} \hfill \textit{#4} % Output job title and location
+		\textit{#3} % Output job title and location
 	}%
 	\smallskip % Vertical whitespace
 	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
