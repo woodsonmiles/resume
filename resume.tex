@@ -1,119 +1,74 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-
 \documentclass[
-	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	a4paper, % Uncomment for A4 paper size (default is US letter)
 	11pt, % Default font size, can use 10pt, 11pt or 12pt
 ]{resume} % Use the resume class
-
 \usepackage{ebgaramond} % Use the EB Garamond font
-
 %------------------------------------------------
 
 \name{Woodson Miles} % Your name to appear at the top
-
 % You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
-
 \address{woodson.miles@my.wheaton.edu \\ 731.796.5288} % Main address
-
 %----------------------------------------------------------------------------------------
-
 \begin{document}
-
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
 \begin{rSection}{Experience}
 
 	\begin{rSubsection}{Cloud Engineer}{Sep 2024 - Present}{Kellogg, Brown, \& Root}
-		\item Owned deployment and maintenance for a \$3.6 million kubernetes web app.
-		\item Lead design of pipeline and workflow for a \$100 million air-gapped deployment.
-		\item Designed pipeline component catalog enabling CI/CD for the contract.
-		\item Built GitOps solution to provide web app customer continuous delivery.
+		\item Configured FluxCD GitOps solution to provide web app customer continuous delivery.
+		\item Planned Zarf delivery workflow for a \$100 million air-gapped deployment.
+		\item Managed cloud native deployment for a \$3.6 million kubernetes web app.
+		\item Designed GitLab pipeline component catalog enabling CI/CD for the contract.
 		\item Created helm chart to package custom app with dependencies on postgresql, keycloak, and kafka.
 	\end{rSubsection}
-
-%------------------------------------------------
-
 	\begin{rSubsection}{DevSecOps Engineer}{June 2021 - Sep 2024}{Lockheed Martin}
-		\item Provided tier 3 DevOps support for software team of 70+ engineers.
-		\item Automated cloud delivery for a \$10 million web app.
-		\item Taught the LM Secure Coding class
-		\item Received a 2023 Extraordinary Engineering and Technology Award (EETA) for student mentorship.
+		\item Automated pipeline delivery to OpenShift for a \$10 million microservice architecture.
+		\item Led migration to Istio Service Mesh.
+		\item Refactored stateful deployment scripts into declarative helm packaging, following IaC.
+		\item Built Security as Code pipeline with Syft and Grype.
+		\item Taught the Lockheed Martin (LM) Secure Coding class.
 	\end{rSubsection}
-
-%------------------------------------------------
-
-	\begin{rSubsection}{Full Stack Software Engineer}{June 2021 - July 2024}{Lockheed Martin}
-		\item Designed a web app saving over \$20,000/quarter in part manufacturing downtime.
-		\item Authored the Lockheed Martin (LM) Space Corporate Functional Aid for Secure Software Development.
-		\item Led surge effort to integrate API services, accelerating delivery schedule by five months.
-		\item Distinguished as LM Space Recognized Technical Talent (RTT) 2022.
-		\item Developed a web app that reduces Risk Management Framework (RMF) labor by 20\% for a \$1.7 billion program.
-	\end{rSubsection}
-
-%------------------------------------------------
-
-	\begin{rSubsection}{Deputy Team Chief}{Sep 2018 - Dec 2023}{Colorado Army National Guard Cyber}
+	\begin{rSubsection}{Defensive Cyber Team Chief}{Sep 2018 - Dec 2023}{Colorado Army National Guard}
 		\item Lead threat hunting for ballot system in 2021 state elections.
 		\item Mobilized the cyber task force in response to cyber attacks against state infrastructure.
 	\end{rSubsection}
-
-%------------------------------------------------
-
-	\begin{rSubsection}{Cyber Security Engineer}{June 2017 - July 2021}{Lockheed Martin}
-		\item Developed a vulnerability tool that saved \$10,000/year in cyber security labor for a \$2 billion program.
-		\item Received 2018 EETA for cyber innovation.
-		\item Led vulnerability testing for GPS Control System (GCS).
+	\begin{rSubsection}{Full Stack Software Engineer}{June 2017 - July 2024}{Lockheed Martin}
+		\item Designed a web app saving over \$20,000/quarter in part manufacturing downtime.
+		\item Built observability \& monitoring platform with Prometheus.
+		\item Authored the LM Space Corporate Functional Aid for Secure Software Development.
+		\item Led surge effort to integrate API services, accelerating delivery schedule by five months.
+		\item Distinguished as LM Space Recognized Technical Talent (RTT) 2022.
 	\end{rSubsection}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-
 \begin{rSection}{Education}
 	
-	\textbf{Wheaton College, Wheaton, IL} \hfill \textit{May 2017} \\ 
+	\textbf{Wheaton College, Wheaton, IL} \hfill May 2017 \\ 
 	B.S. in Computer Science \& Math Minor \\
-	GPA: 3.85, \textit{Summa Cum Laude} \\
+	GPA: 3.85, \textit{Summa Cum Laude}
 	
 \end{rSection}
-
 \begin{rSection}{Active \& Former Certifications}
-
-	\textbf TS/SCI Security Clearance with CI Polygraph, Certified Information System Security Professional (CISSP),  GIAC Cloud Security Essentials (GCLD), Certified Ethical Hacker, Security+, Cisco Certified Network Associate
-
+	TS/SCI w/ CI Poly, CISSP, GCLD, Security+, CCNA, CEH
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
-
 \begin{rSection}{Technical Strengths}
 
 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-		Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
-		Protocols \& APIs & XML, JSON, SOAP, REST \\
-		Databases & MySQL, PostgreSQL, Microsoft SQL \\
-		Tools & SVN, Vim, Emacs
+		DevOps Tools & Helm, ArgoCD, FluxCD, Zarf, GitLab CI, Containerization, Docker, Istio, Syft, Grype, Trivy \\
+		Cloud Platforms & AWS, Azure, K8s, K3s, Kind, OpenShift \\
+		Computer Languages & Python, Java, Shell, C, C++
 	\end{tabular}
-
 \end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-	%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
-
 \end{document}
