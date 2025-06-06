@@ -20,34 +20,34 @@
 \begin{rSection}{Experience}
 
 	\begin{rSubsection}{Cloud Engineer}{Sep 2024 - Present}{Kellogg, Brown, \& Root}
-		\item Designed the cloud native deployment for a \$3.6 million kubernetes web app.
+		\item Designed continuous deployment for a \$3.6 million kubernetes (k8s) web app.
+		\item Built multitenant k8s development environment, which dynamically generated ingress routes to test feature branches.
 		\item Configured FluxCD GitOps deployments to provide continuous delivery to four remote environments.
-		\item Created a modular GitLab pipeline component catalog, enabling the contract to build, scan, publish, and deploy containers and helm charts.
-		\item Encapsulated a microservice architecture into a custom helm chart, deployable with a single idempotent command.
+		\item Introduced Zarf packaging for a \$100 million air-gapped k8s deployment, obviating the maintenance of a secondary air-gapped repository and registry.
 		\item Built a kind cluster in a pipeline to run full system tests automatically on merge requests.
-		\item Planned Zarf delivery workflow for a \$100 million air-gapped deployment, removing the need to maintain a separate air-gapped repository and registry.
-		\item Containerized web app, enhancing portability and declarative configuration
+		\item Created a GitLab pipeline catalog, enabling the contract to build, scan, publish, and deploy container images, helm charts, and zarf packages.
+		\item Encapsulated a microservice architecture into a custom helm chart, deployable with a single idempotent command.
+		\item Containerized multistage web app images, providing portability and declarative configuration
 	\end{rSubsection}
 	\begin{rSubsection}{DevSecOps Engineer}{July 2021 - Sep 2024}{Lockheed Martin}
 		\item Automated pipeline delivery to OpenShift for a \$10 million microservice architecture.
-		\item Led migration to Istio Service Mesh, adhering to zero-trust architecture best practices.
-		\item Refactored stateful deployment scripts into declarative helm packaging, following IaC best practices.
+		\item Led migration to Istio Service Mesh, establishing zero-trust architecture best practices.
 		\item Built Security as Code pipeline with Syft and Grype, enabling version controlled vulnerability management.
 		\item Designed and taught the Lockheed Martin (LM) Secure Coding class to over 250 engineers.
 		\item Authored the LM Space Corporate Functional Aid for Secure Software Development.
+		\item Refactored stateful deployment scripts into declarative helm packaging, following IaC best practices.
 	\end{rSubsection}
 	\begin{rSubsection}{Defensive Cyber Team Chief}{Sep 2018 - Dec 2023}{Colorado Army National Guard}
-		\item Lead threat hunting for ballot system in 2021 state elections.
+		\item Led threat hunting for ballot system in 2021 state elections.
 		\item Mobilized the cyber task force in response to cyber attacks against state infrastructure.
 		\item Evaluated joint defense teams in Cyber Shield, the largest unclassified DoD cyber exercise.
 	\end{rSubsection}
 	\begin{rSubsection}{Full Stack Software Engineer}{June 2017 - July 2024}{Lockheed Martin}
 		\item Designed a web app saving over \$20,000/quarter in part manufacturing downtime.
-		\item Built observability \& monitoring platform with Prometheus.
-		\item Authored the LM Space Corporate Functional Aid for Secure Software Development.
-		\item Led surge effort to integrate API services, accelerating delivery schedule by five months.
+		\item Built observability \& monitoring platform with Prometheus, to track manufactuing downtime.
+		\item Led surge effort to integrate API services across business areas, accelerating delivery schedule by three months.
 		\item Distinguished as LM Space Recognized Technical Talent (RTT) 2022.
-		\item Received 2018 Engineering Award for design of vulnerability management tool for \$2 billion program.
+		\item Received 2018 Engineering Award for design of vulnerability management tool for a \$2 billion program.
 	\end{rSubsection}
 \end{rSection}
 
@@ -76,7 +76,7 @@
 		Microservices & Postgresql-HA, Prometheus, Kafka, Keycloak, Airflow, OAuth2-proxy, Redis \\
 		Security Tools & Syft, Grype, Trivy, Fortify, SonarQube \\
 		Protocols & OIDC, OAuth2, SAML, JWT, LDAP, REST\\
-		Computer Languages & Python, Java, Shell, C, C++, Delphi
+		Computer Languages & Python, Java, POSIX Shell, C, C++, Delphi
 	\end{tabular}
 \end{rSection}
 \end{document}
