@@ -3,7 +3,7 @@
 %----------------------------------------------------------------------------------------
 \documentclass[
 	a4paper, % Uncomment for A4 paper size (default is US letter)
-	11pt, % Default font size, can use 10pt, 11pt or 12pt
+	10pt, % Default font size, can use 10pt, 11pt or 12pt
 ]{resume} % Use the resume class
 \usepackage{ebgaramond} % Use the EB Garamond font
 %------------------------------------------------
@@ -11,12 +11,16 @@
 \name{Woodson Miles} % Your name to appear at the top
 % You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
-\address{woodson.miles@my.wheaton.edu \\ 731.796.5288} % Main address
+\address{TS/SCI with CI Polygraph $\diamond$ CISSP (DoD 8140 Advanced)}
+\address{woodson.miles@my.wheaton.edu $\diamond$ 731.796.5288}
 %----------------------------------------------------------------------------------------
 \begin{document}
-\begin{rSection}{Active Certifications}
-  \item TS/SCI clearance w/ CI Polygraph
-  \item CISSP (DoD 8140/8570 Advanced Proficiency)
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Professional Summary}
+	Senior Platform Engineer and SRE leader with experience building Internal Developer Platforms used by 50+ engineers. Specializing in Go tooling, Kubernetes orchestration (including air-gapped Zarf deployments), and zero-trust service mesh adoption. Proven track record of driving platform adoption across large engineering organizations, including authoring corporate standards and training 250+ engineers.
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -25,28 +29,30 @@
 \begin{rSection}{Experience}
 
  	\begin{rSubsection}{Site Reliability Engineering Manager}{Sep 2024 - Present}{Kellogg, Brown, \& Root}
- 		\item Led 7 engineers; hired 4, formalized on-call rotation, and directed delivery of a \$100M classified mission product orchestrating 55 services.
- 		\item Managed internal development platform adopted by 51 engineers, supplying GitLab repos, Harbor registries, and a three-cluster K8s progression (dev, stage, prod).
- 		\item Migrated a \$3.6M web app to containerized microservices, reducing deployment labor with single-command Zarf packaging.
- 		\item Modernized CI/CD ecosystem: authored a company-wide GitLab pipeline catalog and built a Go CLI that accelerated deployments three-fold.
- 		\item Doubled regression detection by embedding disposable kind clusters in merge request pipelines, removing dependency on persistent test infrastructure.
+    \item Directed architectural delivery of a \$100M, 55-microservice classified platform, scaling the team from 3 to 7 operators, and formalizing on-call SLOs.
+    \item Product-managed an Internal Developer Platform (IDP) using Gitlab, Harbor, SonarQube, and Keycloak for 50+ engineers across 3 K8s environments.
+    \item Owned multi-cluster Strimzi Kafka and Apache NiFi pipelines processing thousands of messages/sec, implementing a resilient Apache Iceberg and Trino 
+      archival solution for long-term data durability.
+    \item Architected a company-wide GitLab pipeline catalog and custom Go CLI to abstract cloud-native complexities, reducing time-to-first-commit by 60\%
+ 		\item Migrated a \$3.6M web app to containerized microservices, slashing deployment cycle times in half through air-gapped Zarf packaging.
+    \item Doubled regression detection by embedding ephemeral kind (Kubernetes in Docker) clusters in pipelines, eliminating dependency on persistent test infrastructure.
  	\end{rSubsection}
  	\begin{rSubsection}{DevSecOps Engineer}{July 2021 - Sep 2024}{Lockheed Martin}
- 		\item Automated OpenShift deployment pipeline for a \$10M microservice architecture, converting a single-person manual process into self-service delivery for the entire team.
+ 		\item Engineered a self-service GitOps delivery model using OpenShift, eliminating a manual bottleneck to enable independent team releases.
  		\item Led Istio Service Mesh adoption, satisfying zero-trust security requirements to unlock production deployment.
- 		\item Built Security-as-Code pipeline with Syft and Grype, scanning every merge request to main and eliminating all critical vulnerabilities before audits.
- 		\item Refactored $\sim$1,000 lines of stateful deployment scripts into declarative Helm charts, eliminating configuration drift and simplifying troubleshooting.
+ 		\item Built Security-as-Code pipeline with Syft and Grype, enforcing automated guardrails across all pull requests to permanently eliminate critical vulnerabilities pre-audit.
+ 		\item Eliminated environmental configuration drift by refactoring $\sim$1,000 lines of imperative deployment scripts into declarative, version-controlled Helm charts.
  		\item Designed and taught LM Secure Coding to 250+ engineers and authored the LM Space corporate standard for secure software development; recognized as LM Space RTT 2022.
  	\end{rSubsection}
  	\begin{rSubsection}{Defensive Cyber Team Chief}{Sep 2018 - Dec 2023}{Colorado Army National Guard}
  		\item Led a 10-soldier team threat hunting for Colorado ballot system in 2021 state elections.
- 		\item Maintained cyber task force readiness to respond to ransomware attacks against state infrastructure.
+    \item Engineered incident response playbooks and hardened infrastructure defenses to mitigate ransomware risks across state infrastructure.
  		\item Served as evaluator and competitor across multiple Cyber Shield exercises, the largest unclassified DoD cyber exercise.
  	\end{rSubsection}
  	\begin{rSubsection}{Full Stack Software Engineer}{June 2017 - June 2021}{Lockheed Martin}
  		\item Designed a web app and Prometheus monitoring platform that saved over \$20,000/quarter in part manufacturing downtime.
  		\item Led an 8-engineer surge integrating client services with REST APIs through OIDC machine-to-machine authentication, accelerating delivery by three months.
- 		\item Received 2018 Engineering Award for designing a vulnerability management tool for a \$2B GPS Ground Control program.
+ 		\item Received 2018 Engineering Award for designing a vulnerability management tool for a \$2B enterprise aerospace infrastructure program.
   	\end{rSubsection}
  \end{rSection}
 
@@ -67,10 +73,10 @@
 \begin{rSection}{Technical Strengths}
 
 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-		DevOps Tools & Helm, ArgoCD, FluxCD, Zarf, GitLab CI, Docker, containerization, Istio, Harbor \\
-		Cloud Platforms & AWS, Azure, K8s, K3s, kind, OpenShift, VPC, EC2, RDS, Terraform \\
+		DevOps Tools & Helm, ArgoCD, FluxCD, Zarf, GitLab CI, Docker, containerization, Istio, Harbor, Ansible, Jenkins \\
+		Cloud Platforms & AWS, Azure, GCP, K8s, K3s, kind, OpenShift, VPC, EC2, RDS, Terraform \\
 		Infrastructure & PostgreSQL, Prometheus, Kafka, Keycloak, OAuth2-proxy, Redis \\
-		Security Tools & Syft, Grype, Trivy, Fortify, SonarQube \\
+		Security Tools & Syft, Grype, Trivy, Fortify, SonarQube, Splunk, IAM \\
 		Protocols & OIDC, OAuth2, SAML, JWT, LDAP, REST \\
 		Languages & Go, Python, Java, Shell, C, C++ \\
 		Linux & Gnu, Unix, Bash, Posix, Ubuntu, CentOS, RedHat, Debian \\
